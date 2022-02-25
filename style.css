@@ -1,0 +1,136 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    height: 100vh;
+    background-color: rgb(243,243,243);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu {
+    display: flex;
+    padding: 35px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu h1 {
+    font-size: 30px;
+}
+
+.panel-buttons button,
+.menu-buttons button {
+    font-size: 15px;
+    padding: 5px 15px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color .4s;
+}
+
+.panel-buttons button:hover,
+.menu-buttons button:hover{
+    background-color: black;
+    color: white;
+}
+
+.note-area {
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.note {
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    border: 1px solid black;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+    background-color: rgb(154, 205, 50);
+}
+
+.note-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.06);
+    padding: 15px;
+    height: 60px;
+}
+
+.note-header h1 {
+    font-size: 25px;
+}
+
+.note-header button {
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    background-color: transparent;
+}
+
+.note-body {
+    padding: 15px;
+}
+
+.note-panel {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    border: 1px solid black;
+    box-shadow: 0 0 5px black;
+    background-color: white;
+    padding: 20px;
+}
+
+.note-panel h2 {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.note-panel label {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.note-panel select,
+.note-panel textarea {
+    width: 90%;
+    margin-bottom: 20px;
+    max-height: 400px;
+    max-width: 90%;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.error {
+    margin-bottom: 10px;
+    color: red;
+    visibility: hidden;
+}
+
+
+
+
+
