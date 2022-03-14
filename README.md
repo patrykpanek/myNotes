@@ -1,3 +1,3 @@
 # MyNotes
 
-Try it - ```https://patrykpanek.github.io/myNotes/```
+Try it - https://patrykpanek.github.io/myNotes/
